@@ -517,7 +517,7 @@ loadJSONData(basePath + "settings.json")
         layoutOSD();
         updateOSD();
         setInterval(function () { checkStatus(); updateOSD(); updateDebug(); checkWatcher(); }, 1000);
-        if (r[2]) startClock(); else playRandomVideo();
+        playRandomVideo();
     })
     .catch(function (e) {
         settings.debug = true;
